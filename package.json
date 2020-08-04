@@ -1,0 +1,50 @@
+{
+  "name": "serve-static-cli",
+  "version": "1.0.0",
+  "description": "cli",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env PORT=3000 nodemon --watch 'src/**/*' -e ts,tsx --exec 'ts-node' ./src/bin/cli.ts",
+    "build": "tsc"
+  },
+  "keywords": [
+    "koa",
+    "app",
+    "node"
+  ],
+  "bin": {
+    "serve-static-cli": "./lib/bin/cli.js"
+  },
+  "author": "lidasong",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/router": "^8.0.8",
+    "art-template": "^4.13.2",
+    "debug": "^4.1.1",
+    "fs-extra": "^9.0.1",
+    "get-ext": "^1.0.2",
+    "koa": "^2.11.0",
+    "koa-art-template": "^1.1.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.1",
+    "koa-markdown": "^2.0.2",
+    "koa-static": "^5.0.0",
+    "mime": "^2.4.6"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.7",
+    "chalk": "^4.1.0",
+    "commander": "^6.0.0",
+    "cross-env": "^7.0.0",
+    "del": "^5.1.0",
+    "eslint": "^6.8.0",
+    "get-port": "^5.1.1",
+    "inquirer": "^7.3.3",
+    "nodemon": "^2.0.2",
+    "open": "^7.1.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.8.3"
+  }
+}

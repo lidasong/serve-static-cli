@@ -1,0 +1,3 @@
+# static server cli
+
+## 
