@@ -2,7 +2,7 @@
   "name": "serve-static-cli",
   "version": "1.0.0",
   "description": "cli",
-  "main": "build/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cross-env PORT=3000 nodemon --watch 'src/**/*' -e ts,tsx --exec 'ts-node' ./src/bin/cli.ts",
