@@ -16,8 +16,10 @@ program.version(packageInfo.version)
 
 program.parse(process.argv)
 
+port = +program.port
+
 if(program.port) {
-    svrx({port: +program.port})
+    svrx({port})
 } else {
     svrx({port: 3000})
 }
