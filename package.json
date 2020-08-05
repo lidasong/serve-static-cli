@@ -1,6 +1,6 @@
 {
   "name": "serve-static-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "cli",
   "main": "lib/index.js",
   "scripts": {
@@ -17,7 +17,10 @@
   "bin": {
     "serve-static-cli": "./lib/bin/cli.js"
   },
-  "repository": { "type": "git", "url": "git@github.com:lidasong/serve-static-cli.git" },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lidasong/serve-static-cli.git"
+  },
   "author": "lidasong <lidasong2014@163.com>",
   "license": "ISC",
   "dependencies": {
