@@ -8,7 +8,6 @@ router.get('/', getList)
 
 router.get('/**', async (ctx) => {
     const ext = extname(ctx.path)
-    console.log(ext, 'extension')
     if(!ext) {
         await getList(ctx)
     }

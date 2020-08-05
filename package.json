@@ -1,7 +1,7 @@
 {
   "name": "serve-static-cli",
   "version": "1.0.2",
-  "description": "cli",
+  "description": "a lightweight local static server cli, view your program or current folder content",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
